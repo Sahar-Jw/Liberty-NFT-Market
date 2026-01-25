@@ -1,0 +1,666 @@
+/* GLOPALE STYLE START */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+}
+:root{
+    --primary-color:#7453FC;
+    --sec-color:#fff;
+}
+.main-btn{
+    width: 200px;
+    height: 53px;
+    border-radius: 50px;
+    color: var(--sec-color);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+span{
+    color: var(--primary-color);
+}
+/* GLOPALE STYLE END */
+
+/* HEADER START */
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 128px; */
+    justify-content: space-between;
+    background-image: url(./../img/banner-bg.jpg);
+    height: 100vh;
+    /* padding: 30px 134px; */
+    padding: 30px 90px;
+    /* NAV START */
+    nav{
+        width: 100%;
+        height: 12%;
+        display: flex;
+        gap: 35px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        border-radius: 50px;
+        padding: 0px 33px;
+            img{
+                width: 139px;
+            }
+            ul{
+                display: flex;
+                gap:50px ;
+                flex-shrink: 0;
+                list-style: none;
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: #b3b0b0;
+                            &:hover{
+                                border-bottom: 2px solid var(--primary-color);
+                                transition: all 0.2s linear;
+                            }
+                        }
+                    }
+            }
+            .menu{
+                background: none;
+                border: none;
+                display: none;
+                cursor: pointer;
+                svg{
+                    path{
+                        fill:var(--primary-color);
+                    }
+                }
+            }
+    }
+    /* NAV END */
+    /* HERO START */
+    .hero{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        color: var(--sec-color);
+            .hero-text{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 508px;
+                    h2{
+                        font-size: 16px;
+                    }
+                    h1 {
+                        font-size: 40px;
+                        margin-bottom: 4px;
+                    }
+                    p{
+                        font-size: 15px;
+                        margin-bottom: 24px;
+                        font-weight: 500;
+                    }
+                    .hero-btn{
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                        .sec-btn{
+                        background: rgba(0, 0, 0, 0.126);
+                        border: 2px solid var(--sec-color);
+                        color: var(--sec-color);
+                        &:hover{
+                            background-color: var(--primary-color);
+                            transition: all 0.5s linear;
+                            border: none;
+                        }
+                    }
+                    .pri-btn{
+                        background-color:var(--primary-color);
+                        border: none;
+                        color: var(--sec-color);
+                        &:hover{
+                            background-color: var(--sec-color);
+                            color: var(--primary-color);
+                            transition: all 0.5s linear;
+                        }
+                    }
+                    }
+            }
+    }
+    /* HERO END */
+}
+/* HEADER END */
+
+/* MAIN START */
+main{
+    /* CATEGORIES AND COLLECTION START */
+    .categories-and-collection{
+        display: flex;
+        flex-direction: column;
+        gap: 146px;
+        padding: 130px 134px;
+        background-image: url(./../img/dark-bg.jpg);
+            .categories{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                    .top-border{
+                        width: 100px;
+                        height: 2px;
+                        background-color: var(--primary-color);
+                    }
+                    h1{
+                        margin-bottom: 34px;
+                        color: var(--sec-color);
+                    }
+                    .categories-cards{
+                        display: flex;
+                        flex-wrap: wrap;
+                        color: var(--sec-color);
+                        gap: 24px;
+                            .cards{
+                                width: 160px;
+                                height: 127px;
+                                border: 1px solid #393939;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 10px;
+                                border-radius: 10px;
+                                background-color: #282B30;
+                                    /* img{
+                                    } */
+                                    h2{
+                                        font-size: 18px;
+                                    }
+                            }
+                    }
+            }
+            .collection{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+                    .top-border{
+                        width: 100px;
+                        height: 2px;
+                        background-color: var(--primary-color);
+                    }
+                    h1{
+                        margin-bottom: 34px;
+                        color: var(--sec-color);
+                    }
+                    .collection-cards{
+                        display: flex;
+                        gap: 24px;
+                            .cards{
+                                display: flex;
+                                flex-direction: column;
+                                border-radius: 10px 10px 0px 0px;
+                                background-color: #282B30;
+                                    img{
+                                        border-radius: 10px 10px 0px 0px;
+                                        width: 100%;
+                                    }
+                                    .cards-text-container{
+                                        border-radius: 0px 0px 10px 10px;
+                                        border: 1px solid #393939;
+                                        padding: 30px 31px;
+                                        color: var(--sec-color);
+                                        h2{
+                                            border-bottom: 1px solid #4c4c4c;
+                                            font-size: 20px;
+                                            padding-bottom: 20px;
+                                        }
+                                        .card-text{
+                                            display: flex;
+                                            justify-content: space-between;
+                                            padding: 20px 0px;
+                                        .cards-text-collection{
+                                            display: flex;
+                                            flex-direction: column;
+                                                h3{
+                                                    font-size: 16px;
+                                                    font-weight: 800;
+                                                }
+                                                p{
+                                                    font-size: 16px;
+                                                }
+
+                                        }
+                                        .cards-text-Category{
+                                            display: flex;
+                                            flex-direction: column;
+                                                h3{
+                                                    font-size: 16px;
+                                                    font-weight: 800;
+                                                }
+                                                p{
+                                                    font-size: 16px;
+                                                }
+                                        }
+
+                                        }
+                                        .pri-btn{
+                                            background-color:var(--primary-color);
+                                            border: none;
+                                            width: 100%;
+                                            color: var(--sec-color);
+                                                &:hover{
+                                                    background-color: var(--sec-color);
+                                                    color: var(--primary-color);
+                                                    transition: all 0.5s linear;
+                                                }
+                    }
+            }
+                                    }
+                            }
+                    }
+            }
+    /* CATEGORIES AND COLLECTION END */
+
+    /* CREATE NFT START */
+    .create-nft{
+        background-image: url(./../img/main-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        padding: 70px 134px;
+            .create-nft-header{
+                display: flex;
+                justify-content: space-between;
+                gap: 30px;
+                align-items: center;
+                    .create-nft-header-title{
+                        display: flex;
+                        gap: 24px;
+                        flex-direction: column;
+                            .border{
+                                width: 100px;
+                                height: 2px;
+                                background-color: var(--sec-color);
+                            }
+                            h1{
+                                color: var(--sec-color);
+                            }
+                    }
+                    .sec-btn{
+                        background: rgba(255, 255, 255, 0.126);
+                        border: 2px solid var(--sec-color);
+                        color: var(--sec-color);
+                        &:hover{
+                            background-color: var(--primary-color);
+                            transition: all 0.5s linear;
+                            border: none;
+                        }
+                    }
+            }
+            .create-nft-body{
+                display: flex;
+                gap: 24px;
+                    .set-up-your-wallet,.add-your-digital-nft,.sell-your-nft{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: left;
+                        gap: 16px;
+                        color: var(--sec-color);
+                            img{
+                                width:70px;
+                                padding: 20px;
+                                background-color: rgb(222, 222, 222);
+                                border-radius: 17px;
+                            }
+                            h2{
+                                font-size: 18px;
+                            }
+                            p{
+                                font-size: 16px;
+                            }
+                    }
+                    .set-up-your-wallet,.add-your-digital-nft{
+                        border-right: 2px solid rgb(222, 222, 222);
+                    }
+                    .add-your-digital-nft,.sell-your-nft{
+                        a{
+                            text-decoration: none;
+                            color: #4724d1;
+                        }
+                    }
+            }
+    }
+    /* CREATE NFT END */
+
+    /* ITEMS START */
+    .items{
+        background-image: url(./../img/dark-bg.jpg);
+        display: flex;
+        flex-direction: column;
+        padding: 80px 134px;
+        gap: 44px;
+            .items-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 30px;
+                .items-header-text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                        .border{
+                            width: 100px;
+                            height: 3px;
+                            background-color: var(--primary-color);
+                        }
+                        h1{
+                            color: var(--sec-color);
+                        }
+                }
+                ul{
+                    display: flex;
+                    gap: 20px;
+                    list-style: none;
+                        li{
+                            a{
+                                text-decoration: none;
+                                font-weight: 600;
+                                color: var(--sec-color);
+                                    &:hover{
+                                        border-bottom: 2px solid var(--primary-color);
+                                        transition: all 0.2s linear;
+                                    }
+                            }
+                        }
+                }
+                .items-menu{
+                background: none;
+                border: none;
+                display: none;
+                cursor: pointer;
+                svg{
+                    path{
+                        fill:var(--primary-color);
+                    }
+                }
+            }
+            }
+            .items-body{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                color: var(--sec-color);
+                    .card{
+                        display: flex;
+                        gap: 20px;
+                        background-color: #282B30;
+                        border-radius: 16px;
+                        border: 1px solid #4c4c4c;
+                        padding: 30px;
+                            img{
+                                border-radius: 16px;
+                                /* width: 100%;
+                                height:100% ; */
+                            }
+                            .card-text{
+                                display: flex;
+                                flex-direction: column;
+                                /* gap: 24px; */
+                                justify-content: space-around;
+                                h1{
+                                    font-size: 18px;
+                                }
+                                .card-text-header{
+                                    display: flex;
+                                    gap: 10px;
+                                    border-bottom: 1px solid #4c4c4c;
+                                    padding-bottom: 22px;
+                                        img{
+                                            border-radius: 80px;
+                                            width: 40px;
+                                            height: 40px;
+                                        }
+                                        .card-text-header-detailes{
+                                            h2{
+                                                font-size: 13px;
+                                            }
+                                            a{
+                                                text-decoration: none;
+                                                color: var(--primary-color);
+                                                font-size: 13px;
+                                            }
+                                        }
+                                }
+                                .card-body{
+                                    display: flex;
+                                    gap: 30px;
+                                        .card-body-text-left{
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 10px;
+                                            p{
+                                                font-size: 13px;
+                                            }
+                                            h3{
+                                                font-size: 15px;
+                                                font-weight: 800;
+                                            }
+                                        }
+                                        .card-body-text-right{
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 10px;
+                                            p{
+                                                font-size: 13px;
+                                                text-align: right;
+                                            }
+                                            h3{
+                                                font-size: 15px;
+                                                font-weight: 800;
+                                            }
+                                        }
+                                }
+                                a{
+                                    color: var(--primary-color);
+                                    font-size: 14px;
+
+                                }
+                            }
+                    }
+            }
+    }
+    /* ITEMS END */
+    }
+/* MAIN END */
+
+/* FOOTER START */
+    footer{
+        background-image: url(./../img/main-bg.jpg);
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+            p{
+                font-size: 15px;
+                color: var(--sec-color);
+            }
+    }
+/* FOOTER END */
+
+/* MEDIA GUERY START */
+@media screen and (max-width:992px) {
+
+    .main-btn {
+        width: 120px;
+        font-size: 10px;
+}
+
+    header{
+        padding: 0px;
+        display: block;
+            nav{
+                border-radius: 0px;
+                height: 14%;
+                img{
+                    width: 126px;
+                }
+                ul{
+                    display: none;
+                }
+                    .menu{
+                        display: block;
+                    }
+            }
+            .hero{
+                padding: 0px 30px;
+                padding-top: 50px;
+                .hero-text{
+                    h2{
+                        margin-bottom: 0px;
+                        font-size: 15px;
+                    }
+                    h1{
+                        margin-bottom: 0px;
+                        font-size: 25px;
+                    }
+                    p{
+                        line-height: 22px;
+                        font-size: 13px;
+                        margin-bottom: 0px;
+                    }
+                }
+                img{
+                    display: none;
+                }
+            }
+    }
+    main{
+        .categories-and-collection{
+            padding:70px 30px;
+            gap: 70px;
+                .categories{
+                    h1{
+                        font-size: 21px;
+                    }
+                        .categories-cards {
+                            justify-content: center;
+                            .cards {
+                                width: 113px;
+                                height: 113px;
+                                h2 {
+                                    font-size: 13px;
+                                }
+                            }
+                    }
+                }
+                .collection{
+                    h1{
+                        font-size: 21px;
+                    }
+                    .collection-cards{
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        .cards{
+                            .cards-text-container{
+                                h2{
+                                    font-size: 16px;
+                                }
+                                .card-text{
+                                    .cards-text-collection,.cards-text-Category{
+                                        h3,p {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        }
+        .create-nft{
+            padding:70px 30px;
+            .create-nft-header{
+                flex-wrap: wrap !important;
+                .create-nft-header-title{
+                    h1{
+                        font-size: 21px;
+                    }
+                }
+            }
+            .create-nft-body{
+                flex-direction: column;
+                .set-up-your-wallet,.add-your-digital-nft,.sell-your-nft{
+                    border: none;
+                    border-bottom: 2px solid rgb(222, 222, 222);
+                    padding-bottom: 20px;
+                    img{
+                        width: 60px;
+                        padding: 14px;
+                    }
+                    h2 {
+                    font-size: 17px;
+                    }
+                    p {
+                    font-size: 14px;
+                    line-height: 24px;
+                    }
+                }
+            }
+        }
+        .items{
+            padding:70px 30px;
+            .items-header{
+                .items-header-text{
+                    h1{
+                        font-size: 21px;
+                    }
+                }
+                ul{
+                    display: none;
+                }
+                .items-menu{
+                    display: block;
+                }
+            }
+            .items-body{
+                justify-content: center;
+                .card{
+                    flex-direction: column;
+                        img{
+                            height: 200px;
+                        }
+                        .card-text{
+                            h1 {
+                                font-size: 16px;
+                                margin-bottom: 20px;
+                            }
+                            .card-text-header {
+                                margin-bottom: 20px;
+                            }
+                            .card-body{
+                                margin-bottom: 20px;
+                                .card-body-text-left,.card-body-text-right{
+                                    h3{
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+
+                        }
+                }
+            }
+        }
+    }
+    footer{
+        p{
+            font-size: 14px;
+        }
+    }
+}
+/* MEDIA GUERY END */

@@ -516,6 +516,22 @@ main{
                     .menu{
                         display: block;
                     }
+                    .offcanvas{
+                        ul{
+                            li{ padding-left: 10px;
+                                &:hover{
+                                    background-color: var(--primary-color);
+                                    border-radius: 10px;
+                                    
+                                }
+                                a{
+                                    &:hover{
+                                        border-bottom: none !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
                     form{
                         input{
                             &:focus
@@ -523,6 +539,14 @@ main{
                                 box-shadow: none !important;
                             border: none;
                             border: 3px solid var(--primary-color) !important;
+                            }
+                        }
+                        button{
+                            &:hover{
+                                border: 2px solid var(--primary-color) !important;
+                                background-color: black !important;
+                                color: var(--primary-color);
+                                transition: all 0.4s linear;
                             }
                         }
                     }

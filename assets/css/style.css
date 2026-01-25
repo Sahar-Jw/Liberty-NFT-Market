@@ -516,6 +516,16 @@ main{
                     .menu{
                         display: block;
                     }
+                    form{
+                        input{
+                            &:focus
+                            {
+                                box-shadow: none !important;
+                            border: none;
+                            border: 3px solid var(--primary-color) !important;
+                            }
+                        }
+                    }
             }
             .hero{
                 padding: 0px 30px;

@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>practice 5</title>
+    <title> Liberty NFT Market </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -32,13 +33,45 @@
                     <a href="#">Create Yours</a>
                 </li>
             </ul>
-            <button class="menu">
+            <button class="menu navbar-toggler" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation">
                 <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M24.0803 7H1.60535C0.718746 7 0 7.67158 0 8.5C0 9.32842 0.718746 10 1.60535 10H24.0803C24.9669 10 25.6856 9.32842 25.6856 8.5C25.6856 7.67158 24.9669 7 24.0803 7Z" fill="#025595"/>
                 <path d="M1.60535 3.00001H24.0803C24.9669 3.00001 25.6856 2.32843 25.6856 1.5C25.6856 0.67158 24.9669 0 24.0803 0H1.60535C0.718746 0 0 0.67158 0 1.5C0 2.32843 0.718746 3.00001 1.60535 3.00001Z" fill="#025595"/>
                 <path d="M24.0803 14H1.60535C0.718746 14 0 14.6716 0 15.5C0 16.3284 0.718746 17 1.60535 17H24.0803C24.9669 17 25.6856 16.3284 25.6856 15.5C25.6856 14.6716 24.9669 14 24.0803 14Z" fill="#025595"/>
                 </svg>
             </button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img src="./assets/img/logo.png" alt="">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Explore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Item Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Author</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Create Yours</a>
+                        </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button class="main-btn pri-btn " style="background-color: var(--primary-color); border: none;
+                        font-size: 16px;" type="submit">Search</button>
+                        </form>
+                    </div>
+                    </div>
         </nav>
         <!-- NAV END -->
         <!-- HERO START -->
@@ -377,5 +410,6 @@
         </p>
     </footer>
     <!-- FOOTER END -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

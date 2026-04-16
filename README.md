@@ -3,7 +3,7 @@
 ## Overview
 Liberty NFT Market is a sleek, professional static website template designed for NFT marketplaces. It allows users to **create, sell, and collect top NFTs** in a modern, responsive interface. Perfect for showcasing digital art, blockchain collectibles, music NFTs, and more.
 
-This is a fully static landing page built with clean, semantic HTML and powered by Bootstrap for quick deployment.
+This is a fully responcive landing page built with clean, semantic HTML and powered by Bootstrap for quick deployment.
 
 ![Hero Banner](./assets/img/banner-01.png)
 

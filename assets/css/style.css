@@ -395,6 +395,7 @@ main{
                 gap: 30px;
                 color: var(--sec-color);
                     .card{
+                        color: aliceblue;
                         display: flex;
                         gap: 20px;
                         background-color: #282B30;
